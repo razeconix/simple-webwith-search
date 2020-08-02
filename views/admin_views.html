@@ -1,0 +1,19 @@
+{{> partials/header }}
+
+<h1 class="mt-3">Views case</h1>
+<div class="my-5">
+    <h5 class="mt-3">License plate</h5>
+    &nbsp;&nbsp;&nbsp;{{ plate }} <br>
+    <h5 class="mt-3">Date</h5>
+    &nbsp;&nbsp;&nbsp;{{date}} <br>
+    <h5 class="mt-3">Case type</h5>
+    &nbsp;&nbsp;&nbsp;{{ type }} <br>
+    <h5 class="mt-3">Case detail</h5>
+    &nbsp;&nbsp;&nbsp;{{ detail }} <br>
+    <h5 class="mt-3">receipt number</h5>
+    &nbsp;&nbsp;&nbsp;{{ recNumber }} <br>
+    <a href="/admin/{{ id }}" class="btn btn-secondary">Edit</a>
+</div>
+
+
+{{> partials/footer }}

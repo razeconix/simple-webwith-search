@@ -1,0 +1,31 @@
+{{> partials/header }}
+
+<div class="my-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>License plate</th>
+        <th>Case type</th>
+        <th>Receipt number</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{# result }}
+      <tr>
+        <td>{{ plate }}</td>
+        <td>{{ type }}</td>
+        <td>{{ recNumber }}</td>
+        <td>{{ date }}</td>
+        <td>
+          <a href="/admin/{{ id }}/views" class="btn btn-secondary">Views</a>
+          <a href="/admin/{{ id }}/delete" class="btn btn-danger">Delete</a>
+        </td>
+      </tr>
+      {{/ result }}
+    </tbody>
+  </table>
+  <a href="/admin/create" class="btn btn-primary">Add new case</a>
+</div>
+
+{{> partials/footer }}
